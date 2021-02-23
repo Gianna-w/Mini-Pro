@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "target": "es6", 
+    "module": "commonjs",
+    "sourceMap":true, // 压缩后的代码与源码映射，便于debug
+    "removeComments": true,
+
+    /* 严格类型检查 */
+    "strict": true,
+    "alwaysStrict": true,
+
+    /* 如何解决模块 */
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true,  // 允许从模块进行默认导入而没有默认导出
+    "esModuleInterop": true
+  }
+}

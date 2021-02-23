@@ -1,0 +1,11 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="userinfo">
+    <button wx:if="{{isNeedLogin}}" bindtap="toLogin">请先登录</button>
+    <block wx:if="{{!!stepInfoList.length}}">
+      <view>今天是{{stepInfoList[stepInfoList.length-1].date}}</view>
+      <view>运动步数为{{stepInfoList[stepInfoList.length-1].step}}</view>
+      <button bindtap="getWeRunInfo">点击刷新</button>
+    </block>
+  </view>
+</view>
